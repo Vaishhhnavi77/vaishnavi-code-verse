@@ -1,10 +1,10 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -31,38 +31,31 @@ const ContactSection = () => {
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="bg-gray-100 p-3 rounded-md mr-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-teacher-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
+                  <Mail className="h-6 w-6 text-teacher-purple" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <p className="text-gray-600">vaishnavi.nakhate@example.com</p>
+                  <p className="text-gray-600">vaishnavinakhate.here@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <div className="bg-gray-100 p-3 rounded-md mr-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-teacher-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
+                  <Phone className="h-6 w-6 text-teacher-purple" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Phone</h4>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+91 9975365478</p>
                 </div>
               </div>
 
               <div className="flex items-start">
                 <div className="bg-gray-100 p-3 rounded-md mr-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-teacher-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
+                  <MapPin className="h-6 w-6 text-teacher-purple" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Location</h4>
-                  <p className="text-gray-600">Mumbai, Maharashtra, India</p>
+                  <p className="text-gray-600">Pune, Maharashtra, India</p>
                 </div>
               </div>
             </div>
