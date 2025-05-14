@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import TeachingSection from '@/components/TeachingSection';
+import PricingSection from '@/components/PricingSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import SkillCard from '@/components/SkillCard';
@@ -102,6 +103,7 @@ const Index = () => {
         </div>
       </section>
 
+      <PricingSection />
       <ContactSection />
       <Footer />
     </>
